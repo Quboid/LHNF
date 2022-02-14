@@ -14,6 +14,13 @@ namespace LHNF
             {
                 return;
             }
+
+            // Tunnel entrances don't need inverted
+            if (info.m_netAI is RoadTunnelAI)
+            {
+                return;
+            }
+
             Vector3 buffer;
 
             buffer = endPosition;
